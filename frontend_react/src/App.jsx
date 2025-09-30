@@ -5,9 +5,11 @@ import Footer from './component/Footer'
 import{BrowserRouter,Routes,Route} from "react-router-dom"
 import Register from './component/Register'
 import Login from './component/Login'
+import AuthContext from './component/AuthProvider'
 const App = () => {
   return (
     <>
+    <AuthContext>
     <BrowserRouter>
     <Header/>
     <Routes>
@@ -17,6 +19,7 @@ const App = () => {
     </Routes>
     <Footer/>
     </BrowserRouter>
+    </AuthContext>
     </>
   )
 }

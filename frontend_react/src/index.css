@@ -13,3 +13,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.glass-bg {
+            /* This is the key Glassmorphism property */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
