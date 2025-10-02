@@ -16,7 +16,12 @@ const Button = ({ name,url }) => {
           {name}
           </Link>
         </button>
-      ) : null}
+      ) : name === 'Explore Dashboard' ? (
+        <button className='bg-blue-400 px-4 text-sm md:px-8 py-2 font-semibold rounded-md'>
+          <Link to={url}>
+          {name}
+          </Link>
+        </button>):null}
     </>
   )
 }
