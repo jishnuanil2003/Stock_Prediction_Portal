@@ -17,7 +17,7 @@ const Header = () => {
   }
   return (
     <>
-    <div className="flex justify-around py-8">
+        <div className="fixed top-0 left-0 w-full flex justify-around py-8 z-50 ">
         <Link  className='font-bold text-lg md:text-xl'>Stock Prediction Portal</Link>
         <div className="flex gap-4">
           {isLoggedin ?(
